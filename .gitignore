@@ -21,3 +21,6 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+# Since it's a library, we don't want the lockfile
+composer.lock
