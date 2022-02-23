@@ -1,0 +1,28 @@
+{
+    "name": "stechstudio/laravatar",
+    "description": "Minimalist Blade component for displaying a Gravatar, or falling back to initials.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "STS\\Laravatar\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Palmer",
+            "email": "dp@reproconnect.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.0|^9.0",
+        "illuminate/view": "^8.0|^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "STS\\Laravatar\\LaravatarServiceProvider"
+            ]
+        }
+    }
+}
