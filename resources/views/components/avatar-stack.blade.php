@@ -18,12 +18,14 @@
         :size="$size * 2"
     />
 
-    <x-laravatar::gravatar
-        :class="$avatarClass"
-        style="width: {{ $size }}px; height: {{ $size }}px; position: absolute; z-index: {{ $zIndexStart++ }};"
-        alt=""
-        :email="$email"
-    />
+    @if($email)
+        <x-laravatar::gravatar
+            :class="$avatarClass"
+            style="width: {{ $size }}px; height: {{ $size }}px; position: absolute; z-index: {{ $zIndexStart++ }};"
+            alt=""
+            :email="$email"
+        />
+    @endif
 
     @if($image)
         <img
